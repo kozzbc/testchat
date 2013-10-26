@@ -107,27 +107,12 @@
 		  <fieldset id="logindetails" class="logindetails">
 		      <div>
 			      <div>
-			        <div align="left">
-			          <input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="User Name" />
-			          <input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
-			          <input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="Password" style="display:none;" />
-			          <input type="submit" class="loginbutton" tabindex="104" value="Log in" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." accesskey="s" />
-		            </div>
+			        <div align="left"></div>
 		        </div>
 	        </div>
 	    </fieldset>
-		  <div id="remember" class="remember">
-		      <label for="cb_cookieuser_navbar">
-		        <input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" /> 
-		        Remember Me?</label>
-	    </div>
-			  
-		  <input type="hidden" name="s" value="" />
-		  <input type="hidden" name="securitytoken" value="guest" />
-		  <input type="hidden" name="do" value="login" />
-		  <input type="hidden" name="vb_login_md5password" />
-		  <input type="hidden" name="vb_login_md5password_utf" />
-      </form>
+		  <div id="remember" class="remember"></div>
+	  </form>
 	  <script type="text/javascript">
 			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
 			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
@@ -236,7 +221,7 @@
     
       <div style="float: left; width: 95px;"></div>
       
-        <script id="bop5twt" type="text/javascript">
+    <script id="bop5twt" type="text/javascript">
         (function() {
                 var twitterScriptTag = document.createElement('script');
                 twitterScriptTag.type = 'text/javascript';
@@ -316,12 +301,7 @@
 
 
   <form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
-		<input type="hidden" name="do" value="dismissnotice" />
-		<input type="hidden" name="s" value="" />
-		<input type="hidden" name="securitytoken" value="guest" />
-		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
-		<input type="hidden" name="url" value="" />
-</form>
+  </form>
 
 
 
@@ -357,7 +337,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 
 </center>
 	
-	<script type="text/javascript">
+  <script type="text/javascript">
 <!--
 var MGCCbEvoNS = {};
 var phrase_error_chat_in_process = "Error : A chat is already being processed, please wait.";
@@ -440,7 +420,7 @@ MGCCbEvoNS.pm_tabs_on = 0;
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.1/dojo/dojo.xd.js" data-dojo-config="parseOnLoad: true"></script><script type="text/javascript" src="mgc_cb_evo/clientscript/mgc_cb_evo_common.js"></script><script type="text/javascript" src="mgc_cb_evo/clientscript/mgc_cb_evo_menu.js"></script><script type="text/javascript" src="mgc_cb_evo/clientscript/mgc_cb_evo_dialog.js"></script><script type="text/javascript" src="mgc_cb_evo/clientscript/mgc_cb_evo_chat.js"></script><script type="text/javascript" src="mgc_cb_evo/clientscript/mgc_cb_evo_chatbox.js"></script><script type="text/javascript" src="mgc_cb_evo/clientscript/mgc_cb_evo_editor.js"></script><script type="text/javascript" src="mgc_cb_evo/clientscript/mgc_cb_evo_pms.js"></script>
  
 
-	<script type="text/javascript">var cb_location = "full"; </script>
+  <script type="text/javascript">var cb_location = "full"; </script>
 
  
 <!-- vBulletin Collapse Tricking -->
@@ -448,7 +428,23 @@ MGCCbEvoNS.pm_tabs_on = 0;
 <!-- / vBulletin Collapse Tricking -->
 
 <a name="mgc_cb_evo_top" id="mgc_cb_evo_top"></a>
-
+<div id="remember2" class="remember"></div>
+<span class="notices">
+<input type="hidden" name="do" value="dismissnotice" />
+<input type="hidden" name="s" value="" />
+<input type="hidden" name="securitytoken" value="guest" />
+<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+<input type="hidden" name="url" value="" />
+</span>
+<input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="User Name" />
+<input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="Password" style="display:none;" />
+<input type="submit" class="loginbutton" tabindex="104" value="Log in" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." accesskey="s" />
+<span class="remember">
+<label for="cb_cookieuser_navbar">
+  <input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" />
+  Remember Me?</label>
+</span>
 <div class="block mgc_cb_evo_block" style="width: 100%;text-align: left;">
 	<!-- Chatbox Title Row -->
 <h2 class="blockhead">
